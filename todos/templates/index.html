@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<main>
+    <h1>Here are your Todos</h1>
+    <section>
+        {% for todo in todos %}
+        <article>
+            <h1>{{ todo.description }} -
+           {% if todo.completed %}
+           <span>Complete</span>
+           {% else %}
+           <span>Not Complete</span>
+           {% endif %}
+        </h1>
+        </article>
+         {% endfor %}
+    </section>
+</main>
+{% endblock %}
+     
