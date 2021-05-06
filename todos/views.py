@@ -1,4 +1,4 @@
-from django.views.generic.edit import CreateView
+from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from django.shortcuts import render
 from .models import Todo
 
@@ -17,4 +17,13 @@ def about(request):
 class CreateTodo(CreateView):
     model = Todo
     fields = ['description']
+    success_url = '/'
+
+class UpdateTodo(UpdateView):
+    model = Todo
+    fields = ['description', 'completed']
+    success_url = '/'
+
+class DeleteTodo(DeleteView):
+    model = Todo
     success_url = '/'

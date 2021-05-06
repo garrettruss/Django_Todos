@@ -12,6 +12,8 @@
            {% else %}
            <span>Not Complete</span>
            {% endif %}
+           <a href="{% url 'update' todo.id %}">Edit</a>
+           <a href="{% url 'delete' todo.id %}">Delete</a>
         </h1>
         </article>
          {% endfor %}

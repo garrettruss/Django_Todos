@@ -1,13 +1,27 @@
 {% extends 'base.html' %}
 
 {% block content %}
+
+
+
 <main>
+
+    {% if object %}
+        <h1>Edit: "{{ object.description }}"?</h1>
+    {% else %}
+        <h1>Create New Todos {{ object.description }}</h1>
+    {% endif %}
+
     <form action="" method="post">
         {% csrf_token %}
         {{ form }}
-    <input type="submit" value="Add Todo">
-</form>
 
+        {% if object %}
+            <input type="submit" value="Update Todo">
+        {% else %}
+            <input type="submit" value="Add Todo">
+        {% endif %}
+    </form>
 </main>
 
 
