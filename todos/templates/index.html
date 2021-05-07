@@ -2,8 +2,9 @@
 
 {% block content %}
 <main>
-    <h1>Here are your Todos</h1>
     <section>
+        {% if todos %}
+        <h1>Here are your Todos</h1>
         {% for todo in todos %}
         <article>
             <h1>{{ todo.description }} -
@@ -17,6 +18,9 @@
         </h1>
         </article>
          {% endfor %}
+    {% else %}
+    <h1>Sorry, No Todos</h1>
+    {% endif %}   
     </section>
 </main>
 {% endblock %}

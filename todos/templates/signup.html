@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<main>
+    <form action="" method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        {% for error in field.errors %}
+            <span style="color: red;">{{error}}</span>
+        {% endfor %}
+        <input type="submit" value="Sign Up">
+    </form>
+</main>
+
+{% endblock %}
