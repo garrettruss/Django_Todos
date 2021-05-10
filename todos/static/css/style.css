@@ -17,7 +17,7 @@ header {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     height: 3rem;
-    background-color: dodgerblue;
+    background-color:cadetblue;
     color: white;
     box-shadow: 1px 1px 3px 1px gray;
 }
@@ -31,10 +31,12 @@ nav {
 ul {
     display: flex;
     list-style: none;
+    padding: 1%;
 }
 
 li {
     margin-right: 1.5rem;
+     padding: 1%;
 }
 
 li > a {
@@ -48,7 +50,7 @@ footer {
     height: 3rem;
     align-items: center;
     justify-content: center;
-    background-color: dodgerblue;
+    background-color:cadetblue;
     color: white;
     font-weight: 700;
 }
