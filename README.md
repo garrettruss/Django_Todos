@@ -20,8 +20,4 @@ In this application, users are able to create an account and add items to their 
 
 #### Next
 
-* Use TensorFlow.js in Node. [See here](https://www.tensorflow.org/js/guide/nodejs).
-
-* Build a transfer-learning based image classification application to recognize new classes other than the 1000 pretrained classes. [See here](https://www.tensorflow.org/js/tutorials/transfer/what_is_transfer_learning).
-
-* Build an image classifier app with TensorFlow on Python [See here](https://www.tensorflow.org/tutorials/images/classification).
+* Build a full crud app with django and react.
