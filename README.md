@@ -4,10 +4,12 @@ In this application, users are able to create an account and add items to their 
 
 ## Technologies Used
 
-* HTML5
-* CSS3
+* HTML
+* CSS
 * Python
-* Djnago
+* Django
+* PostgreSQL
+* Heroku
 * Git/Github
 
 [Click here](https://django-v1-todos.herokuapp.com) to see the app.
